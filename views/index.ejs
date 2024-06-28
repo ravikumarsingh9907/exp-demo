@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <title>React App</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h2 class="heading">Student Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Subject</th>
+                </tr>
+                <% for (var student of data) { %>
+                    <tr>
+                        <th><%= student.name %></th>
+                        <th><%= student.marks %></th>
+                        <th><%= student.subject %></th>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </body>
+</html>
