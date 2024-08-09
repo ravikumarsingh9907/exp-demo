@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 const config = {
     mysql : {
-        host: '0.0.0.0',
-        port: 3306,
-        user: 'root',
-        password: 'Ravi@123',
-        database: 'students_db',
+        host: process.env.HOST,
+        port: process.env.PORT,
+        user: process.env.USERNAME,
+        password: process.env.PASSWORD,
+        database: process.env.DATABASE,
         poolSize: 20,
     }
 }
