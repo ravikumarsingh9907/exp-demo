@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-console.log(process.env.USERNAME);
 module.exports = {
   development : {
     host: process.env.HOST,
