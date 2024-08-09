@@ -4,7 +4,7 @@ require('./Database/index');
 const studentsRouter = require('./Router/student');
 const path = require('path');
 
-const port = process.env.PORT || 5000;
+const port = process.env.HOSTPORT || 5000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
